@@ -1,7 +1,6 @@
 import { Box, Flex, IconButton, Link, Text } from '@chakra-ui/react'
 import React from 'react'
-import { AiOutlineCopyrightCircle } from 'react-icons/ai'
-import { FaDribbble, FaInstagram, FaTwitter } from 'react-icons/fa'
+import { FaDribbble, FaInstagram, FaTwitter, FaGithub } from 'react-icons/fa'
 
 export default function Footer() {
   return (
@@ -21,6 +20,9 @@ export default function Footer() {
                 </Text>
               </Flex>
               <Flex fontSize={22} columnGap="20px">
+                <Link href='https://github.com/Weitulezi/vande-nextchakra-starter' isExternal="true">
+                  <FaGithub/>
+                </Link>
                 <Link href='https://instagram.com/nemotives' isExternal="true">
                   <FaInstagram/>
                 </Link>

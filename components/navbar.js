@@ -39,7 +39,7 @@ const Navbar = () => {
                 <a>
                   <Flex alignItems='center' columnGap='2'>
                     <IoIosRocket size={24}/>
-                    <Heading fontSize={24}>Vande-Starter</Heading>
+                    <Heading fontSize={['18px', '24px', '24px']}>Vande-Starter</Heading>
                   </Flex>
                 </a>
             </NextLink>
@@ -51,12 +51,9 @@ const Navbar = () => {
             columnGap="30px"
             fontWeight="700"
           >
-            <NextLink href='/' passHref>
-              <Link>FirstLink</Link>
-            </NextLink>
-            <NextLink href='/' passHref>
-              <Link>SecondLink</Link>
-            </NextLink>
+            <Link href='https://github.com/Weitulezi/vande-nextchakra-starter' passHref isExternal>
+              Github
+            </Link>
             <IconButton icon={colorMode == 'dark' ? <FaSun/> : <FaMoon/>} onClick={toggleColorMode} isRound/>
           </Flex>
           <Flex
@@ -71,20 +68,11 @@ const Navbar = () => {
                     <CgMenu/>
                   </MenuButton>
                   <MenuList>
-                    <NextLink href='/' passHref>
+                    <Link href="https://github.com/Weitulezi/vande-nextchakra-starter" isExternal display='flex' alignItems='center' columnGap='2'>
                       <MenuItem>
-                        <Link display='flex' alignItems='center' columnGap='2'>
-                          FirstLink
-                        </Link>
+                        Github
                       </MenuItem>
-                    </NextLink>
-                    <NextLink href='/' passHref>
-                      <MenuItem>
-                        <Link display='flex' alignItems='center' columnGap='2'>
-                          SecondLink
-                        </Link>
-                      </MenuItem>
-                    </NextLink>
+                    </Link>
                   </MenuList>
                 </>
               )}
