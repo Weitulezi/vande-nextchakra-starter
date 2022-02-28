@@ -35,7 +35,7 @@ const Navbar = () => {
             justify="center"
             alignItems="center"
           >
-            <NextLink href="/" passHref>
+            <NextLink href="/" passhref>
                 <a>
                   <Flex alignItems='center' columnGap='2'>
                     <IoIosRocket size={24}/>
@@ -51,7 +51,7 @@ const Navbar = () => {
             columnGap="30px"
             fontWeight="700"
           >
-            <Link href='https://github.com/Weitulezi/vande-nextchakra-starter' passHref isExternal>
+            <Link href='https://github.com/Weitulezi/vande-nextchakra-starter' passhref isExternal>
               Github
             </Link>
             <IconButton icon={colorMode == 'dark' ? <FaSun/> : <FaMoon/>} onClick={toggleColorMode} isRound/>
