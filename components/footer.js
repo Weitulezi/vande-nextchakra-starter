@@ -26,7 +26,7 @@ export default function Footer() {
                 <Link href='https://instagram.com/' isExternal="true">
                   <FaInstagram/>
                 </Link>
-                <Link href='https://twitter.com/sarvadanadhika' isExternal="true">
+                <Link href='https://twitter.com/' isExternal="true">
                   <FaTwitter/>
                 </Link>
                 <Link href='https://dribbble.com/' isExternal="true">
